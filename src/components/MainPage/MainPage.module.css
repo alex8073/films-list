@@ -1,0 +1,19 @@
+.main {
+    background: #aaa;
+    box-sizing: border-box;
+    height: 90vh;
+}
+
+.main_inner_wrapper {
+    max-width: 1140px;
+    padding: 0 15px;
+    margin: 0 auto;
+    color: #FFF;
+    text-align: left;
+    font-size: 20px;
+}
+
+.main_content {
+    padding: 5px 0;
+}
+
