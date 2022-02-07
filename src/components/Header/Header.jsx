@@ -1,20 +1,38 @@
-import React from 'react';
-import styles from './Header.module.css';
-import { NavLink } from 'react-router-dom';
+import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
     return (
-        <header className={styles.header}>
-            <div className={styles.header_inner_wrapper}>
-                <nav>
-                    <ul className={styles.navbar_list}>
-                        <li className={styles.navbar_list_item}><NavLink exact={true} activeClassName={styles.active} to="/">Главная</NavLink></li>
-                        <li className={styles.navbar_list_item}><NavLink activeClassName={styles.active} to="/actors">Актеры</NavLink></li>
-                    </ul>
+        <header className="blue darken-1 z-depth-2">
+            <div className="container">
+                <nav className="z-depth-0">
+                    <div className="nav-wrapper blue darken-1">
+                        <ul className="left">
+                            <li>
+                                <NavLink
+                                    exact={true}
+                                    to="/"
+                                    className="flow-text white-text"
+                                    activeClassName="yellow-text text-accent-4"
+                                >
+                                    Главная
+                                </NavLink>
+                            </li>
+                            <li>
+                                <NavLink
+                                    to="/films"
+                                    className="flow-text white-text"
+                                    activeClassName="yellow-text text-accent-4"
+                                >
+                                    Фильмы
+                                </NavLink>
+                            </li>
+                        </ul>
+                    </div>
                 </nav>
             </div>
         </header>
-    )
+    );
 };
 
 export default Header;

@@ -1,9 +1,9 @@
-import {applyMiddleware, combineReducers, createStore} from 'redux';
-import actorsReducer from './actorsReducer';
-import thunkMiddleware from 'redux-thunk';
+import { applyMiddleware, combineReducers, createStore } from "redux";
+import filmsReducer from "./filmsReducer";
+import thunkMiddleware from "redux-thunk";
 
 let reducers = combineReducers({
-    actorsPage: actorsReducer,
+    filmsPage: filmsReducer,
 });
 
 let store = createStore(reducers, applyMiddleware(thunkMiddleware));

@@ -1,16 +1,13 @@
-import * as axios from 'axios';
+import * as axios from "axios";
 
 const instance = axios.create({
-    baseURL: 'https://swapi.co/api/people/',
+    baseURL: "https://swapi.dev/api/films",
 });
 
-export const actorsAPI = {
-    getActors() {
-        return instance.get()
-            .then(response => {
-                return response.data.results
-            });
-    }
+export const filmsAPI = {
+    getFilms() {
+        return instance.get().then((response) => {
+            return response.data.results;
+        });
+    },
 };
-
-

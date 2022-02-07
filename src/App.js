@@ -1,19 +1,23 @@
-import React from 'react';
-import './App.css';
-import {Route, Switch} from 'react-router-dom';
-import Header from './components/Header/Header';
-import ActorsContainer from './components/Actors/ActorsContainer';
-import MainPage from './components/MainPage/MainPage';
+import React from "react";
+import { Route, Switch } from "react-router-dom";
+import Header from "./components/Header/Header";
+import FilmsContainer from "./components/Films/FilmsContainer";
+import MainPage from "./components/MainPage/MainPage";
+import "materialize-css";
 
 const App = () => {
     return (
-        <div>
-            <Header/>
-            <Switch>
-                <Route path='/actors' component={ActorsContainer}/>
-                <Route path='/' component={MainPage}/>
-            </Switch>
-        </div>
+        <>
+            <Header />
+            <section>
+                <div className="container">
+                    <Switch>
+                        <Route path="/films" component={FilmsContainer} />
+                        <Route path="/" component={MainPage} />
+                    </Switch>
+                </div>
+            </section>
+        </>
     );
 };
 

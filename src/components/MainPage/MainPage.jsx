@@ -1,16 +1,7 @@
-import React from 'react';
-import styles from './MainPage.module.css';
+import React from "react";
 
 const MainPage = () => {
-    return (
-        <section className={styles.main}>
-            <div className={styles.main_inner_wrapper}>
-                <div className={styles.main_content}>
-                    Главная страница
-                </div>
-            </div>
-        </section>
-    )
+    return <h5>Главная страница</h5>;
 };
 
 export default MainPage;
