@@ -10,7 +10,7 @@ const App = () => {
         <>
             <Header />
             <section>
-                <div className="container">
+                <div className="container" style={{ paddingTop: "12px" }}>
                     <Switch>
                         <Route path="/films" component={FilmsContainer} />
                         <Route path="/" component={MainPage} />
