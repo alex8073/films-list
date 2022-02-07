@@ -1,6 +1,6 @@
 import React from "react";
 
-const List = ({ list, deleteItem }) => {
+export const List = ({ list, deleteItem }) => {
     return list.map((el) => {
         return (
             <li
@@ -25,5 +25,3 @@ const List = ({ list, deleteItem }) => {
         );
     });
 };
-
-export default List;

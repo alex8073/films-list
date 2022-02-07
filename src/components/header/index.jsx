@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const Header = () => {
+export const Header = () => {
     return (
         <header className="blue darken-1 z-depth-2">
             <div className="container">
@@ -34,5 +34,3 @@ const Header = () => {
         </header>
     );
 };
-
-export default Header;

@@ -1,5 +1,5 @@
 import React from "react";
-import Films from "./Films";
+import { Films as Items } from "./components/films";
 import { connect } from "react-redux";
 import {
     addNewFilm,
@@ -7,7 +7,7 @@ import {
     deleteNewFilm,
     getFilms,
     updateNewFilmNameBody,
-} from "../../redux/filmsReducer";
+} from "../../redux/films-reducer";
 
 class FilmsContainer extends React.Component {
     componentDidMount() {
@@ -19,7 +19,7 @@ class FilmsContainer extends React.Component {
     };
 
     render() {
-        return <Films {...this.props} onNewFilmNameBodyChange={this.onNewFilmNameBodyChange} />;
+        return <Items {...this.props} onNewFilmNameBodyChange={this.onNewFilmNameBodyChange} />;
     }
 }
 
@@ -30,7 +30,7 @@ const mapStateToProps = (state) => ({
     newFilmNameBody: state.filmsPage.newFilmNameBody,
 });
 
-export default connect(mapStateToProps, {
+export const Films = connect(mapStateToProps, {
     getFilms: getFilms,
     updateNewFilmNameBody: updateNewFilmNameBody,
     addNewFilm: addNewFilm,

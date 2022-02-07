@@ -1,6 +1,6 @@
 import React from "react";
 
-const Preloader = () => {
+export const Preloader = () => {
     return (
         <div
             style={{
@@ -27,5 +27,3 @@ const Preloader = () => {
         </div>
     );
 };
-
-export default Preloader;

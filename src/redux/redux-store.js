@@ -1,5 +1,5 @@
 import { applyMiddleware, combineReducers, createStore } from "redux";
-import filmsReducer from "./filmsReducer";
+import filmsReducer from "./films-reducer";
 import thunkMiddleware from "redux-thunk";
 
 let reducers = combineReducers({

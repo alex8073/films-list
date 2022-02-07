@@ -1,8 +1,8 @@
 import React from "react";
-import Preloader from "../common/Preloader/Preloader";
-import List from "./components/List";
+import { Preloader } from "../../../common/preloader";
+import { List } from "./list";
 
-const Films = (props) => {
+export const Films = (props) => {
     if (props.isFetching) {
         return <Preloader />;
     }
@@ -33,5 +33,3 @@ const Films = (props) => {
         </>
     );
 };
-
-export default Films;
